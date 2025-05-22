@@ -3,6 +3,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import Home from "./pages/Home";
 import Photo from "./pages/Photo";
+import Language from "./pages/Language";
 import NotFound from "./pages/NotFound";
 
 function App() {
@@ -12,6 +13,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/photo/:id" element={<Photo />} />
+        <Route path="/language" element={<Language />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
     </BrowserRouter>
